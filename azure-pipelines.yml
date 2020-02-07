@@ -8,16 +8,30 @@ pool:
 
 variables:
   connectionType: Kubernetes Service Connection
-
+  kubernetesServiceEndpoint: bonitaonk8-01-default
 
 steps:
 - task: Kubernetes@1
   inputs:
     connectionType: $(connectionType)
-    kubernetesServiceEndpoint: 'bonitaonk8-01-default'
+    kubernetesServiceEndpoint: $(kubernetesServiceEndpoint)
     namespace: 'default'
     command: 'get'
     arguments: nodes
 
+- task: KubernetesManifest@0
+  inputs:
+    action: 'deploy'
+    kubernetesServiceConnection: $(kubernetesServiceEndpoint)
+    namespace: 'default'
+    manifests: '/manifest/manifest.yml'
+
+- task: Kubernetes@1
+  inputs:
+    connectionType: $(connectionType)
+    kubernetesServiceEndpoint: $(kubernetesServiceEndpoint)
+    namespace: 'default'
+    command: 'get'
+    arguments: 'pods'
 
 
