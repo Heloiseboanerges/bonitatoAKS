@@ -6,13 +6,18 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  connectionType: Kubernetes Service Connection
+
+
 steps:
 - task: Kubernetes@1
   inputs:
-    connectionType: 'Kubernetes Service Connection'
+    connectionType: $(connectionType)
     kubernetesServiceEndpoint: 'bonitaonk8-01-default'
     namespace: 'default'
     command: 'get'
     arguments: nodes
+
 
 
