@@ -24,7 +24,7 @@ steps:
     action: 'deploy'
     kubernetesServiceConnection: $(kubernetesServiceEndpoint)
     namespace: 'default'
-    manifests: '/manifest/manifest.yml'
+    manifests: './manifest/manifest.yml'
 
 - task: Kubernetes@1
   inputs:
