@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bonita-front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bonita-front
+  template:
+    metadata:
+      labels:
+        app: bonita-front
+    spec:
+      containers:
+      - name: bonita-front
+        image: bonitatest.azurecr.io/bonita:7.10
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bonita-front
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+  selector:
+    app: bonita-front
