@@ -24,7 +24,7 @@ spec:
             value: postgres
           - name: DB_ADMIN_USER
             value: "usuario@posgresql4bonita"
-          - name: DB_ADMIN_PASSWORD
+          - name: DB_ADMIN_PASS
             value: 1*clavemaquina
         
 ---
