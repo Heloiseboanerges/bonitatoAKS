@@ -22,9 +22,9 @@ spec:
             value: posgresql4bonita.postgres.database.azure.com
           - name: DB_VENDOR
             value: postgres
-          - name: POSTGRES_ENV_POSTGRES_USER
+          - name: DB_ADMIN_USER
             value: usuario@posgresql4bonita
-          - name: POSTGRES_ENV_POSTGRES_PASSWORD
+          - name: DB_ADMIN_PASS
             value: 1*clavemaquina
         
 ---
