@@ -17,6 +17,14 @@ spec:
         image: bonitatest.azurecr.io/bonita:7.10
         ports:
         - containerPort: 8080
+        env:
+          - name: POSTGRES_DB
+            value: posgresql4bonita.postgres.database.azure.com
+          - name: POSTGRES_USER
+            value: usuario@posgresql4bonita
+          - name: POSTGRES_PASSWORD
+            value: 1*clavemaquina
+        
 ---
 apiVersion: v1
 kind: Service
