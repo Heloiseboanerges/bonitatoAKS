@@ -26,12 +26,6 @@ spec:
             value: postgres@posgresql4bonita
           - name: DB_ADMIN_PASS
             value: postgres
-          - name: DB_USER
-            value: bonita
-          - name: DB_PASS
-            value: bonita
-          - name: DB_NAME
-            value: bonita
         
 ---
 apiVersion: v1
