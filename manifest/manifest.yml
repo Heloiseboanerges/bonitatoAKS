@@ -23,9 +23,9 @@ spec:
           - name: DB_VENDOR
             value: postgres
           - name: DB_ADMIN_USER
-            value: usuario@posgresql4bonita
+            value: postgres@posgresql4bonita
           - name: DB_ADMIN_PASS
-            value: 1*clavemaquina
+            value: postgres
           - name: DB_USER
             value: bonita
           - name: DB_PASS
