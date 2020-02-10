@@ -20,20 +20,12 @@ spec:
         env:
           - name: DB_HOST
             value: posgresql4bonita.postgres.database.azure.com
-          - name: DB_PORT
-            value: "5432"
           - name: DB_VENDOR
             value: postgres
           - name: DB_ADMIN_USER
             value: usuario@posgresql4bonita
           - name: DB_ADMIN_PASSWORD
             value: 1*clavemaquina
-          - name: DB_NAME
-            value: bonitadb
-          - name: DB_USER
-            value: bonitauser
-          - name: DB_PASS
-            value: bonitapass
         
 ---
 apiVersion: v1
