@@ -21,7 +21,7 @@ spec:
           - name: DB_HOST
             value: posgresql4bonita.postgres.database.azure.com
           - name: DB_PORT
-            value: 5432
+            value: "5432"
           - name: DB_VENDOR
             value: postgres
           - name: DB_ADMIN_USER
