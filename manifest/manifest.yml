@@ -23,7 +23,7 @@ spec:
           - name: DB_VENDOR
             value: postgres
           - name: DB_ADMIN_USER
-            value: usuario@posgresql4bonita
+            value: "usuario@posgresql4bonita"
           - name: DB_ADMIN_PASSWORD
             value: 1*clavemaquina
         
