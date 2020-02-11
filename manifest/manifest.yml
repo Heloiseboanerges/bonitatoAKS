@@ -19,13 +19,13 @@ spec:
         - containerPort: 8080
         env:
           - name: DB_HOST
-            value: posgresql4bonita.postgres.database.azure.com
+            value: 192.168.2.4
           - name: DB_VENDOR
             value: postgres
           - name: DB_ADMIN_USER
-            value: usuario@posgresql4bonita
+            value: postgres
           - name: DB_ADMIN_PASS
-            value: 1*clavemaquina
+            value: 
           
 ---
 apiVersion: v1
