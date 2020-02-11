@@ -26,10 +26,6 @@ spec:
             value: testuser
           - name: DB_ADMIN_PASS
             value: 1*clavemaquina
-          - name: TENANT_PASSWORD
-            value: bonita2
-          - name: TENANT_LOGIN
-            value: bonita2
 ---
 apiVersion: v1
 kind: Service
