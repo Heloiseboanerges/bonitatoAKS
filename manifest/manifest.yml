@@ -27,9 +27,9 @@ spec:
           - name: DB_ADMIN_PASS
             value: 
           - name: TENANT_PASSWORD
-            value: bonita
+            value: bonita2
           - name: TENANT_LOGIN
-            value: bonita
+            value: bonita2
 ---
 apiVersion: v1
 kind: Service
