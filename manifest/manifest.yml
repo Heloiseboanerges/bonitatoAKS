@@ -23,10 +23,10 @@ spec:
           - name: DB_VENDOR
             value: postgres
           - name: DB_ADMIN_USER
-            value: testuser
+            value: postgres
           - name: DB_ADMIN_PASS
             value: 1*clavemaquina
-            
+
 ---
 apiVersion: v1
 kind: Service
